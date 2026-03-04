@@ -1,4 +1,4 @@
-package com.cursospring.moviesmanager.persistence;
+package es.edemingo.moviesmanager.persistence;
 
 import org.hibernate.Session;
 

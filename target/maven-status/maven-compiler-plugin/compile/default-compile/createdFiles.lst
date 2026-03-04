@@ -1,0 +1,7 @@
+es\edemingo\moviesmanager\persistence\HibernateUtil.class
+es\edemingo\moviesmanager\model\Genero.class
+es\edemingo\moviesmanager\persistence\PeliculaDAO.class
+es\edemingo\moviesmanager\persistence\SessionManager.class
+es\edemingo\moviesmanager\model\Pelicula.class
+es\edemingo\moviesmanager\App.class
+es\edemingo\moviesmanager\persistence\GeneroDAO.class

@@ -1,6 +1,8 @@
-package com.cursospring.moviesmanager.model;
+package es.edemingo.moviesmanager.model;
 
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name="t_genre")
@@ -22,6 +24,7 @@ public class Genero {
         this.name = name;
     }
 
+
     public int getIdGenero() {
         return idGenero;
     }
@@ -36,5 +39,13 @@ public class Genero {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Genero{" +
+                "idGenero=" + idGenero +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

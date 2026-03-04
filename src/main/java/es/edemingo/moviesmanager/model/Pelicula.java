@@ -1,11 +1,16 @@
-package com.cursospring.moviesmanager.model;
+package es.edemingo.moviesmanager.model;
 
+import es.edemingo.moviesmanager.persistence.PeliculaDAO;
 import jakarta.persistence.*;
 
 import java.util.List;
 
 @Entity
 @Table(name="t_movie")
+@NamedQuery(
+        name="Pelicula.findByDirectorName",
+        query = "FROM Pelicula p WHERE UPPER(p.director) LIKE:cadena"
+)
 public class Pelicula {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -76,4 +81,6 @@ public class Pelicula {
     public void setGenero(Genero genero) {
         this.genero = genero;
     }
+
+
 }

@@ -6,8 +6,8 @@
         <!-- Database connection settings -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/movies-db</property>
-        <property name="hibernate.connection.username">usr-app-movies</property>
-        <property name="hibernate.connection.password">usr-app-movies</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">test</property>
         <!-- JDBC connection pool (use the built-in) -->
         <property name="hibernate.connection.pool_size">10</property>
         <!-- DIALECTO SQL -->
@@ -20,7 +20,7 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
         <!-- List of mapped classes -->
         <!--<mapping class="com.cursogetafe.Ave"/>-->
-        <mapping class="com.cursospring.moviesmanager.model.Genero"/>
-        <mapping class="com.cursospring.moviesmanager.model.Pelicula"/>
+        <mapping class="es.edemingo.moviesmanager.model.Genero"/>
+        <mapping class="es.edemingo.moviesmanager.model.Pelicula"/>
     </session-factory>
 </hibernate-configuration>
